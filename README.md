@@ -1,5 +1,5 @@
 因为题目的解释不明,我查询了英文版本课论坛,助教对于本课程项目的提示
->what columns are measurements on the mean and standard deviation
+>**what columns are measurements on the mean and standard deviation**
 
 >Based on column names in the features is an open question as to is the the entries that include mean() and std() at the end, or does it include entries with mean in an earlier part of the name as well. There are no specific marking critieria on the number of columns. It is up to you to make a decision and explain what you did to the data. Make it easy for people to give you marks by explaining your reasoning.
 
@@ -26,8 +26,12 @@
 我从X_train和X_test中提取所需的加速器和陀螺仪测量均值,标准差,再加上从y_train,y_test中的活动种类转换为名称,与subject_train,subject_test中的被试者数据结合在一起,组成我的第一个整洁数据集tidy_data
 (至此第4步完成)
 
+---
+
 第5步题目要求,这问的太有歧义了,3个两两牵制的变量怎么做成一个二维表(鉴于我们还没接触到多维),所以我查询助教的帖子说
-Doesn't matter, you are being asked to produce a average for each combination of subject, activity, and variable as a sign you can manipulate the data.
+
+>Doesn't matter, you are being asked to produce a average for each combination of >subject, activity, and variable as a sign you can manipulate the data.
+
 既然他说问题是什么不重要,只要展示我有处理数据的能力就行,那我就假定他是想要我的数据能反映出每个变量在每个被试的每个活动的平均读数
 
 我让整洁数据集tidy_data,以受试者编号+活动类型为factor,分割tidy_data,得到的小块用colMeans求列的平均值,最终得到一个纵向压缩版的tidy_data,起名为tidy_data2,并输出
