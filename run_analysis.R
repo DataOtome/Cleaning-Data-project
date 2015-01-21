@@ -22,7 +22,7 @@ tidy_data = rbind(subtest, subtrain)
 
 library("plyr")
 #生成步骤5的整洁数据2
-tidy_data2 = ddply(tidy_data, .(tester,activity, data_from)
+tidy_data2 = ddply(tidy_data, .(tester,activity, data_from),
                    function(x) colMeans(x[1:12]))
 #排序一下
 tidy_data2 = arrange(tidy_data2, as.numeric(as.character(tidy_data2$tester)))
