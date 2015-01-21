@@ -1,0 +1,15 @@
+注: run_analysis.R代码应放在UCI HAR Dataset文件夹内运行
+
+tester为受试者id,为factor,级别是1:30
+
+activity是参与的活动,为factor,共有6个级别: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+data_from标示出该数据是从test还是train得到的
+
+fBodyAcc-mean()-XYZ为加速计所记录到的数据的平均值的平均值
+
+fBodyAcc-std()-XYZ为加速计所记录到的数据的方差的平均值
+
+fBodyGyro-mean()-XYZ为陀螺仪所记录到的数据的平均值的平均值
+
+fBodyGyro-std()-XYZ为陀螺仪所记录到的数据的方差的平均值
