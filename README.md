@@ -1,26 +1,26 @@
 因为题目的解释不明,我查询了英文版本课论坛,助教对于本课程项目的提示
-#what columns are measurements on the mean and standard deviation
+>what columns are measurements on the mean and standard deviation
 
-Based on column names in the features is an open question as to is the the entries that include mean() and std() at the end, or does it include entries with mean in an earlier part of the name as well. There are no specific marking critieria on the number of columns. It is up to you to make a decision and explain what you did to the data. Make it easy for people to give you marks by explaining your reasoning.
+>Based on column names in the features is an open question as to is the the entries that include mean() and std() at the end, or does it include entries with mean in an earlier part of the name as well. There are no specific marking critieria on the number of columns. It is up to you to make a decision and explain what you did to the data. Make it easy for people to give you marks by explaining your reasoning.
 
 所以说我只需要选择我认为的什么是"测量"就好了
 因为如果不用经过处理后的最终数据,就等于让数据收集者之前的努力都白费,再加上处理后的数据能更好的反应问题的本质,所以我决定取原始数据经处理后最终得到的数据为"测量"
 根据features_info文件说明, fBodyAcc-XYZ是经过处理得到的最终加速度数据, fBodyGyro-XYZ为经过处理得到的最终陀螺仪数据.
 查询features文件可知
-<!-- -->
-266 fBodyAcc-mean()-X
-267 fBodyAcc-mean()-Y
-268 fBodyAcc-mean()-Z
-269 fBodyAcc-std()-X
-270 fBodyAcc-std()-Y
-271 fBodyAcc-std()-Z
-424 fBodyGyro-mean()-X
-425 fBodyGyro-mean()-Y
-426 fBodyGyro-mean()-Z
-427 fBodyGyro-std()-X
-428 fBodyGyro-std()-Y
-429 fBodyGyro-std()-Z
-    }
+
+        266 fBodyAcc-mean()-X
+        267 fBodyAcc-mean()-Y
+        268 fBodyAcc-mean()-Z
+        269 fBodyAcc-std()-X
+        270 fBodyAcc-std()-Y
+        271 fBodyAcc-std()-Z
+        424 fBodyGyro-mean()-X
+        425 fBodyGyro-mean()-Y
+        426 fBodyGyro-mean()-Z
+        427 fBodyGyro-std()-X
+        428 fBodyGyro-std()-Y
+        429 fBodyGyro-std()-Z
+    
 由此得到我所需数据的列序号
 
 我从X_train和X_test中提取所需的加速器和陀螺仪测量均值,标准差,再加上从y_train,y_test中的活动种类转换为名称,与subject_train,subject_test中的被试者数据结合在一起,组成我的第一个整洁数据集tidy_data
