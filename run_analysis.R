@@ -28,7 +28,7 @@ tidy_data2 = ddply(tidy_data, .(tester,activity, data_from),
 tidy_data2 = arrange(tidy_data2, as.numeric(as.character(tidy_data2$tester)))
 
 #输出
-write.table(tidy_data2, 'tidy_data2.txt') 
+write.table(tidy_data2, 'tidy_data2.txt',row.name=FALSE) 
 #检查输出
-#cheak = read.table('tidy_data2.txt',check.names = F)
+#cheak = read.table('tidy_data2.txt',check.names = F,head = T)
 
