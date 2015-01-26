@@ -32,7 +32,8 @@ _(至此第4步完成)_
 
 ---
 
-第5步题目要求,这问的太有歧义了,3个两两牵制的变量怎么做成一个二维表(鉴于我们还没接触到多维),所以我查询助教的帖子说
+第5步,翻译害死人" for each activity and each subject."应该翻译成每个活动和每个被试者.我在评审别人作业时发现有人把这题理解错,所以特地过来补上这句说明
+题目要求问的太有歧义了,3个两两牵制的变量怎么做成一个二维表(鉴于我们还没接触到多维),所以我查询助教的帖子说
 
 >Doesn't matter, you are being asked to produce a average for each combination of >subject, activity, and variable as a sign you can manipulate the data.
 
